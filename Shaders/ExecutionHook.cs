@@ -20,6 +20,7 @@ namespace NEOSPlus.Shaders
 				Engine.Current.OnReady += () =>
 				{
 					ShaderInjection.AppendShaders();
+					Quantity.QuantityInjection.AppendTypes();
 				};
 			}
 			catch (Exception e) 
