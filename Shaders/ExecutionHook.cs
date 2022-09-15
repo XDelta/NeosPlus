@@ -1,6 +1,9 @@
 ﻿
 using BaseX;
 using FrooxEngine;
+
+using NEOSPlus.Quantity;
+
 using System;
 
 namespace NEOSPlus.Shaders
@@ -20,7 +23,8 @@ namespace NEOSPlus.Shaders
 				Engine.Current.OnReady += () =>
 				{
 					ShaderInjection.AppendShaders();
-					Quantity.QuantityInjection.AppendTypes();
+					QuantityInjection.AppendTypes();
+					QuantityInjection.AppendUnitCache();
 				};
 			}
 			catch (Exception e) 

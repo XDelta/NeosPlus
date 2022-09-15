@@ -59,6 +59,8 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>$(NeosPath)Neos_Data/Managed/Newtonsoft.Json.dll</HintPath>
+    <Reference Include="QuantityX">
+      <HintPath>$(NeosPath)Neos_Data/Managed/QuantityX.dll</HintPath>
     </Reference>
     <Reference Include="System.Text.Json">
       <HintPath>$(NeosPath)Neos_Data/Managed/System.Text.Json.dll</HintPath>
@@ -210,6 +212,8 @@
     <Compile Include="NeosPlusUtil.cs" />
     <Compile Include="Shaders\ExecutionHook.cs" />
     <Compile Include="Shaders\ShaderInjection.cs" />
+    <Compile Include="Quantity\QuantityInjection.cs" />
+    <Compile Include="Quantity\DataStorage.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SourceGenerators\SourceGenerators.csproj" OutputItemType="Analyzer" />
